@@ -16,7 +16,8 @@ body {
 	clear: both;
 }
 div {
-	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box; 
 }
 /*Хедер*/
 header {
@@ -103,6 +104,8 @@ nav {
     margin-top: 19px;
 }
 .block__wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: relative;
 	margin-top: 197px;
@@ -450,9 +453,6 @@ ul.leaders li.www:after {
 	color: #f1ac11;
 }
 
-/*Сдесь почему-то на границах секций бакопорит отступ. Кажется что блок section class="daily" до конца не закрылся*/
-
-
 /*О нас*/
 .about__us {
 	background: url(../img/about.png) no-repeat center top / cover;
@@ -505,8 +505,12 @@ ul.leaders li.www:after {
 }
 
 .box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 
 }
 
